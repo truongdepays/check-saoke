@@ -21,6 +21,7 @@ bot.on('message', async (msg) => {
         message += `${item.date}\n<b>${item.balance}</b>\n${item.description}\n\n`;
       });
     }
+    console.log(chatId, messageText);
     bot.sendMessage(chatId, message, { parse_mode: 'HTML' });
   }
 });
